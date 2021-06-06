@@ -1025,8 +1025,10 @@ body {
    border: none;
   /* outline: none; */
   /* outline-color: var(--accent-color); */
+  }
 
-
+  .modal-form-checkbox-policy::before:focus {
+    border-color: var(--accent-color);
   }
 
 /* .modal-form-checkbox:checked ~ .icon-vector{
