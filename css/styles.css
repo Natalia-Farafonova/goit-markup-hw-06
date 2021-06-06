@@ -1019,7 +1019,7 @@ body {
    background-image: url(../images/icon-check-label.svg);
    background-repeat: no-repeat;
    justify-content: center;
-   position: center;
+   background-position: center;
    background-color: #2196F3;
    background-size: contain;
    background-origin: border-box;
