@@ -963,7 +963,8 @@ body {
 }
 
 
-.modal-form-checkbox-policy {
+/* .modal-form-checkbox-policy  */
+.form-agreement {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
@@ -972,7 +973,7 @@ body {
   line-height: 1.71;
 }
 
-.icon-vector {
+/* .icon-vector {
   width: 16px;
   height: 15px;
   margin-right: 7px;
@@ -981,7 +982,7 @@ body {
   border-radius: 2px;
   fill: #FFFFFF;
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .modal-form-policy-link {
   color: var(--accent-color);
@@ -997,10 +998,39 @@ body {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
+} 
 
-.modal-form-checkbox:checked ~ .icon-vector{
-  /* background-image: url("/images/icon-check-label.svg"); */
+.modal-form-checkbox-policy::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 15px;
+    /* fill: #FFFFFF; */
+    /* background-image: url(/images/icon-check-label.svg); */
+    background-color: #FFFFFF;
+    margin-right: 7px;
+    border: 1px solid black;
+    border-radius: 2px;
+  }
+
+  .modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
+   background-image: url(/images/icon-check-label.svg);
+   background-repeat: no-repeat;
+   justify-content: center;
+   position: center;
+   background-color: #2196F3;
+   background-size: contain;
+   background-origin: border-box;
+   border-color: var(--accent-color);
+   border: none;
+  /* outline: none; */
+  /* outline-color: var(--accent-color); */
+
+
+  }
+
+/* .modal-form-checkbox:checked ~ .icon-vector{
+  background-image: url("/images/icon-check-label.svg");
   background-color: var(--accent-color);
   background-size: contain;
   background-origin: border-box;
@@ -1009,11 +1039,11 @@ body {
   /* outline: none; */
   /* outline-color: var(--accent-color); */
 
-}
+  /* } */ */
 
-.modal-form-checkbox:focus ~ .icon-vector {
+/* .modal-form-checkbox:focus ~ .icon-vector {
   outline-color: var(--accent-color);
-}
+} */
 
 .form-btn {
   display: flex;
@@ -1043,7 +1073,8 @@ body {
 .modal-form-btn:focus,
 .modal-form-btn:hover {
   background-color: #188CE8;
-}
+} 
+
 /* ============END MODAL WINDOW FORM=========== */
 
 /* ===========FOOTER FORM================ */
@@ -1143,4 +1174,6 @@ body {
   .btn-mail:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
+
+  
 /* ===========END FOOTER FORM============ */
