@@ -1014,7 +1014,7 @@ body {
   }
 
   .modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
-   background-image: url(/images/icon-check-label.svg);
+   background-image: url(../images/icon-check-label.svg);
    background-repeat: no-repeat;
    justify-content: center;
    position: center;
